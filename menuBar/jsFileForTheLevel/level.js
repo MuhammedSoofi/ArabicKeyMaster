@@ -3,7 +3,7 @@ let spanEl = document.querySelectorAll("#text span");
        let typedCharacters = '';
        let typeStart = document.getElementById("type-start")
 
-      // alert("please make sure that you have changed your keyboard to Arabic before you start typing.")
+      alert("Before you begin, make sure to change the typing language to Arabic. Ensure proper spacing between letters and words. Failure to do so may result in one error.")
 
       let ChapterHead = document.querySelector("#chaptersHeading").innerHTML
        
