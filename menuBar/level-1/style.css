@@ -1,0 +1,61 @@
+body{
+    color: rgb(93, 92, 92);
+}
+
+nav{
+    padding-top:10px;
+    position: relative;
+    border-bottom: 1px solid rgb(224, 223, 223) ;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav li{
+    list-style: none;
+}
+
+nav ul li:first-child{
+
+    margin: 0 50px 0 20px;
+}
+
+nav li a{
+    text-decoration: none;
+    color: rgb(93, 92, 92);
+}
+nav p {
+    font-size: 12px;
+    background-color: lightgrey;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 3px;
+    position: absolute; 
+    bottom: -45px;
+    opacity: 0;
+    transition: opacity 0.3s ease;  
+     
+}
+li.backBtn a:hover + p{
+  opacity: 1;
+}
+
+.finger-img img{
+    width: 100%;
+}
+
+.keyboard-image .row img{
+    width: 100%;
+}
+
+ 
+
+ 
+
+ 
+
+ 

@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    font-family: roboto,arial; 
+
+}
+
+nav{     
+ 
+    position: fixed;
+    width: 100%;
+    top: 0;
+   
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav li{
+    height: 100px;
+     
+}
+
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+nav .logo{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+nav a:hover{
+    font-weight: 700;
+    color: #f79256;
+    transition: all 0.3s;
+}
+
+nav li:first-child{
+    margin-right: auto;
+}
+ 
+.nav-bar{
+    background-color: rgb(6, 43, 255);   
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(87, 121, 208, 0.877);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%;
+}
+
+.sidebar a{
+    width: 100%;
+}
+
+.menu-button{
+    display: none;
+}
+
+@media (max-width:800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+}
+@media (max-width:400px){
+    .sidebar{
+        width: 100%;
+    }
+}
+
+/*main section*/
+.home-section{
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    min-height: 90vh;
+}
+.home-section .row{
+    display: flex;
+    align-items: center;
+}
+ 
+.quote-btn{
+    order: 1;
+}
+ 
+
+.home-section .row h1{
+    color: #3652AD;
+    margin-bottom: 20px;
+     
+}
+
+.home-section .row .startBtn{
+    color: white;
+    font-weight: 500;
+    background-color: #3652AD;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    
+}
+.home-section .row .startBtn:hover{
+    background-color: white;
+    color: #3652AD;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.45) ;
+    transition: all 0.5s;
+}
+
+ 
+
+.home-section .row .motive p{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.home-img{
+    display: flex;
+    justify-content: center;
+}
+.home-img img{
+    min-width: 400px;
+    max-width: 800px;
+}
+
+
+/* about section */
+.mission-vision{
+  
+    width: 100%;
+
+    background-image:linear-gradient(45deg,
+    rgba(157, 155, 155, 0.204),
+    rgba(88, 133, 196, 0.75)) ,
+    url(image/about-sec.jpg);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: rgb(255, 255, 255);
+}
+
+.mission div,
+.vision div {
+    width: 50%;
+}
+
+.vision div{
+    float: right;
+}
+
+
+@media (max-width:800px){
+    .mission div,
+    .vision div{
+        width: 100%;
+    }
+}
+ 
+
+/* about section*/
+
+.about-section h1{
+    color: #3652AD;
+}
+
+.about-section .container .row{
+    color: rgb(116, 116, 116);
+}
+
+.about-section .row img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* contact section */
+
+.contact-section{
+    min-height: 90vh;
+    background-color: black;
+    color: white;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-section .contact{
+    display: flex;
+    justify-content: center;
+}
+.contact-section .contact input,
+.contact-section .contact textarea{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: 300px;
+    margin-bottom: 40px;
+    display: block;
+    border-style: none;
+    border-bottom: 1px solid lightgrey;
+} 
+
+.contact-section .contact button{
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    padding: 10px 50px;
+    border-radius: 10px;
+    cursor: pointer;
+  
+}
+
+.contact-section .contact button:hover{
+    background-image: linear-gradient(to bottom right, rgb(0, 110, 255), rgb(171, 8, 246));;
+}
+
+
+.contact-section h1{
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.contact-section .contact-message{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     
+}
+
+.contact-section .contact-message p{
+    max-width: 450px;
+}
+
+
+
+.contact-section .contact-message p{
+    color: rgb(138, 137, 137);
+}
+
+.line {
+    border-bottom: 2px solid rgb(247, 247, 247);
+    display: inline-block;
+    margin: 0 5px;
+    width: 100px;  
+}
+
+
+
+ 
+

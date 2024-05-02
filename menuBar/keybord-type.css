@@ -1,0 +1,262 @@
+body{
+    color: rgb(93, 92, 92);
+    
+}
+
+ 
+
+
+
+
+
+
+
+nav{
+    padding-top:10px;
+    position: relative;
+    border-bottom: 1px solid rgb(224, 223, 223) ;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav li{
+    list-style: none;
+}
+
+nav ul li:first-child{
+
+    margin: 0 50px 0 20px;
+}
+
+nav li a{
+    text-decoration: none;
+    color: rgb(93, 92, 92);
+}
+nav p {
+    font-size: 12px;
+    background-color: lightgrey;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 3px;
+    position: absolute; 
+    bottom: -45px;
+    opacity: 0;
+    transition: opacity 0.3s ease;  
+     
+}
+
+#chaptersHeading{
+    background-color: lightgray;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 0px 5px 5px 0px;
+    position: fixed;
+    left: 0;
+    top: 50px;
+
+}
+ 
+
+.alif-lam{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+#text{
+    width: 700px;
+    text-align: right;
+    border-bottom: 2px solid lightgray;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+}
+
+
+#text span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: 10px;  
+ 
+    
+}
+
+
+/* keybord style*/
+.keyboard{
+    
+    width: 700px;  
+    height: 300px;
+}
+
+
+ 
+
+.keyboard > div {
+    height: 20%;
+    
+}
+.numbers-row,
+.top-row,
+.home-row,
+.bottom-row,
+.space-row{
+    display: flex;
+    gap: 2px;
+}
+.numbers-row > button,
+.top-row > button,
+.home-row > button,
+.bottom-row > button,
+.space-row > button{
+    flex: 1;
+    border: 1px solid lightgrey;
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 2px;
+    
+}
+.numbers-row > .backBtn,
+.bottom-row > .shift{
+    flex: 2;
+}
+.top-row > .tab,
+.top-row > .slash{
+    flex: 1.7;
+}
+
+.home-row > .caps-lock,
+.home-row > .enter{
+    flex: 1.9;
+}
+.space-row > .space{
+    flex: 6;
+}
+
+.fingerPoint{
+    color: rgb(245, 6, 6);
+    margin-top: -15px;
+}
+.point{
+    margin-top: 9px;
+}
+
+/* background to know the position of the button*/
+.keyColor{
+    background-color: rgb(203, 238, 203) !important;
+}
+
+
+
+  /* style for removing the starting message*/
+#type-start{
+    background-color: orange;
+    color: white;
+    font-weight: 700;
+    padding: 10px 20px;
+    position: fixed;
+    left:0;  
+    top: 150px; 
+}
+.divRemove{
+    transform: translateX(-200px);
+    opacity: 0;
+    transition: 1.5s;
+}
+
+
+/* Result section*/
+
+.result-section{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.result-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation-name: slideIn;
+    animation-duration: 3s;
+}
+
+@keyframes slideIn{
+    from{
+        opacity: 0;
+        transform: rotateX(90deg);
+    }
+    to{
+        opacity: 1;
+        transform: rotateX(0deg);
+    }
+}
+ 
+.speed-container{
+    height: 350px;
+    width: 800px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+.about-result{
+    display: flex;
+    justify-content: space-around;
+}
+.about-result .mistake,
+.about-result .speed {
+    background-color: #3191e0;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+     
+}
+.about-result h1{
+    font-size:5rem;
+    font-weight:700;
+    margin-bottom: 0;
+
+}
+.about-result p{
+    margin-top: -10px;
+} 
+.try-next{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.try-next a{
+    color: black;
+    background-color: lightgray;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+
+}
+.try-next p{
+    margin: 0;
+}
+
