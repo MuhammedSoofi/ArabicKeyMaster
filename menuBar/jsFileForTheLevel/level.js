@@ -3,8 +3,6 @@ let spanEl = document.querySelectorAll("#text span");
        let typedCharacters = '';
        let typeStart = document.getElementById("type-start")
 
-      alert("Before you start, ensure that you switch the typing language to Arabic. Use appropriate spacing between letters and words. Failure to do so may result in one error.")
-
       let ChapterHead = document.querySelector("#chaptersHeading").innerHTML
        
      changeChapter(ChapterHead)
@@ -92,20 +90,20 @@ let spanEl = document.querySelectorAll("#text span");
         
            switch (chapterNumber) {
                case "Chapter1":
-                   expectedWord  = 'ا ا ل ا ا ا ل ا ل ا ل ا ل ا ا ل ا ل ا ل ا ا ا ل ل ل ا ا ل ل ا ا ا ا ل ل ا ا ل ا'
+                   expectedWord  = 'االااالالالالاالالالااالللااللااااللاالاللااااللاالا'
                break;
                
                case "Chapter2":
-                   expectedWord = 'ب ت ب ت ت ت ت ب ب ب ت ت ب ب ت ت ب ت ت ت ب ب ب ب ت ب ت ب ت ب'
+                   expectedWord = 'بتبتتتتبببتتببتتبتتتببببتبتبتببتبتبت'
                    
                break;
                
                case "Chapter3":
-                  expectedWord ='ا ل ب ت ت ب ت ا ل ا ل ب ا ب ا ت ب ب ت ا ل ت ب ت ب ل ا ل ل ب ت ت ا  '
+                  expectedWord ='البتتبتالالباباتببتالتبتبلاللبتتاتبلاللبتتا'
                break;
 
                case "Chapter4":
-                  expectedWord='ن ي ن ي ن ن ي ن ن ي ي ي ي ن ن ي ن ي ي ن ن ي ي ن ن ي ي ن ن ي ن ي'
+                  expectedWord='نينيننيننييييننينييننييننييننينينيننيييينن'
                break;
 
                case "Chapter5":
@@ -113,15 +111,15 @@ let spanEl = document.querySelectorAll("#text span");
                break;
 
                case "Chapter6":
-                  expectedWord='م س م س م م س س س م م م س م س س س م م س س س م م س س م س م م س س س م م م م س س م م م س'
+                  expectedWord='مسمسممسسسمممسمسسسممسسسممسسمسممسسسممممسسممم'
                break;
 
                case "Chapter7":
-                  expectedWord='ك ش ك ش ش ش ك ك ك ك ش ش ك ش ش ك ش ك ك ك ش ش ش ك ش ش ك ش ك ك ك ش ش ش ش ك ش'
+                  expectedWord='كشكشششككككششكششكشكككشششكششكشكككششششكش'
                break;
 
                case "Chapter8":
-                  expectedWord ='ط ش ط ط ط ش ش ش ط ط ط ش ش ط ط ش ش ط ط ط ط ط ش ش ط ط ط ش ش ط ط ط ش ش ط ط ش ش '
+                  expectedWord ='طشطططشششطططششططششطططططششطططششطططششططشش'
                break;
 
                case "Chapter9":
@@ -129,11 +127,11 @@ let spanEl = document.querySelectorAll("#text span");
                break;
 
                case "Chapter10":
-                expectedWord ='ف غ غ ف ف ف غ غ غ ف ف ف غ غ ف ف غ ف غ ف غ غ غ غ ف غ غ ف غ غ ف ف غ ف غ غ ف ف غ'
+                expectedWord ='فغغفففغغغفففغغففغفغفغغغغفغغفغغففغفغغففغ'
                break;
 
                case "Chapter11":
-                expectedWord ='ع ق ق ق ع ع ع ق ق ع ع ع ق ق ق ع ع ق ق ع ق ع ق ق ع ع ق ق ع ق ع ع ق ق ع ق ق ع ع ع ق ق ق'
+                expectedWord ='عقققعععققعععقققععققعقعققععققعقععققعققعععقق'
                break;
 
                case "Chapter12":
@@ -141,7 +139,7 @@ let spanEl = document.querySelectorAll("#text span");
                break;
 
                case "Chapter13":
-                expectedWord ='ه ث ث ث ه ه ه ث ه ث ث ه ه ه ه ث ث ه ث ه ه ه ث ث ه ث ه ه ه ث ه ث ث ه ه ه ث ث ث ه ه ه ث ه ث ه ه ه'
+                expectedWord ='هثثثهههثهثثههههثثهثهههثثهثهههثهثثهههثثثهههثهثهه'
                break;
 
                case "Chapter14":
@@ -149,11 +147,11 @@ let spanEl = document.querySelectorAll("#text span");
                break;
 
                case "Chapter15":
-                expectedWord ='خ ص خ ص ص خ ص ص خ ص ص خ خ ص ص ص خ خ ص ص ص خ خ خ ص ص خ خ خ ص ص خ خ'
+                expectedWord ='خصخصصخصصخصصخخصصصخخصصصخخخصصخخخصصخخ'
                break;
 
                case "Chapter16":
-                expectedWord ='ح ض ح ح ض ض ح ح ح ض ض ض ح ح ح ض ض ح ح ض ض ح ح ض ض ض ح ح ض ض ض ح ح'
+                expectedWord ='حضححضضحححضضضحححضضححضضححضضضححضضضحح'
                break;
                
                case "Chapter17":
@@ -161,7 +159,7 @@ let spanEl = document.querySelectorAll("#text span");
                break;
                
                case "Chapter18":
-                expectedWord ='ج ج د د ج ج ج د د ج د د ج ج ج د د د د ج ج د د د د ج ج د د ج ج د د ج د د ج ج ج ج د د ج ج د د ج ج د'
+                expectedWord ='ججددجججددجددجججددددججددددججددججددجددججججددججددجج'
                break;
 
                case "Chapter19":
@@ -169,7 +167,7 @@ let spanEl = document.querySelectorAll("#text span");
                break;
 
                case "Chapter20":
-                expectedWord ='ة ر ة ر ر ة ة ر ر ة ة ر ر ة ة ر ة ة ر ة ر ة ة ر ر ة ة ر ة ة ر ر ة ة ة ر ة ة ر ة ر ر ة ة ر ة ر ة ر ر ة ر ر'
+                expectedWord ='ةرةررةةررةةررةةرةةرةرةةررةةرةةررةةةرةةرةررةةرةرةررةر'
                break;
 
                case "Chapter21":
@@ -177,7 +175,7 @@ let spanEl = document.querySelectorAll("#text span");
                break;
 
                case "Chapter22":
-                expectedWord ='و ؤ و ؤ ؤ و و و ؤ ؤ و و ؤ ؤ ؤ و ؤ و و ؤ ؤ و و ؤ ؤ و ؤ ؤ ؤ و ؤ و ؤ ؤ و ؤ و ؤ ؤ و ؤ و و ؤ و و ؤ ؤ و'
+                expectedWord ='وؤوؤؤوووؤؤووؤؤؤوؤووؤؤووؤؤوؤؤؤوؤوؤؤوؤوؤؤوؤووؤووؤؤ'
                break;
 
                case "Chapter23":
@@ -185,15 +183,15 @@ let spanEl = document.querySelectorAll("#text span");
                break;
 
                case "Chapter24":
-                expectedWord ='ز ء ز ز ء ز ز ء ء ز ء ز ز ء ز ء ء ء ز ز ء ء ز ء ء ز ز ز ء ء ز ء ز ز ء ز ز ء ز ء ء ز ز ز ء ز ء ز'
+                expectedWord ='زءززءززءءزءززءزءءءززءءزءءزززءءزءززءززءزءءزززءزءز'
                break;
 
                case "Chapter25":
-                expectedWord ='ظ ئ ئ ظ ظ ئ ظ ئ ظ ئ ئ ظ ئ ظ ئ ئ ظ ئ ظ ظ ئ ئ ظ ظ ئ ظ ئ ئ ظ ظ ئ ئ ئ ظ ظ ظ ئ ظ ئ ئ'
+                expectedWord ='ظئئظظئظئظئئظئظئئظئظظئئظظئظئئظظئئئظظظئظئئ'
                break;
 
                case "Chapter26":
-                expectedWord ='لا لا ى ى لا ى ى لا ى لا ى لا ى ى لا لا ى ى لا ى لا لا لا ى ى ى لا لا ى ى لا ى ى لا لا لا ى ى لا ى'
+                expectedWord ='لالاىىلاىىلاىلاىلاىىلالاىىلاىلالالاىىىلالاىىلاىىلالالاىىلاى'
                break;
 
                case "Chapter27":
@@ -201,7 +199,7 @@ let spanEl = document.querySelectorAll("#text span");
                break;
 
                case "Chapter28":
-                expectedWord ='ذ ذ ذ ذ ذ ذ ذ ذ ذ ذ ذ ذ ذ ذ ذ ذ ذ ذ ذ ذ ذ ذ ذ ذ ذ ذ ذ ذ ذ ذ ذ ذ ذ ذ ذ ذ ذ ذ ذ ذ ذ ذ ذ ذ ذ ذ ذ'
+                expectedWord ='ذذذذذذذذذذذذذذذذذذذذذذذذذذذذذذذذذذذذذذذذذذذذذذذ'
                break;
 
                case "Chapter29":
